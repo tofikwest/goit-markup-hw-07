@@ -19,47 +19,50 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
 
-  <body>
+  <body class="body">
     <!-- ШАПКА -->
-    <header class="outline">
+    <header class="header outline">
       <!-- НАВИГАЦИЯ -->
       <div class="container main-nav">
         <nav class="main-nav">
           <a class="logo" href="./index.html"
-            ><span class="part-logo">Web</span>Studio</a
+            ><span class="logo__part-logo">Web</span>Studio</a
           >
           <ul class="list site-nav">
-            <li class="item">
-              <a class="link studio" href="./index.html">Студия</a>
+            <li class="site-nav__item">
+              <a class="link site-nav__link site-nav__studio" href="./index.html">Студия</a>
             </li>
-            <li class="item">
-              <a class="link portfolio current" href="./portfolio.html"
+            <li class="site-nav__item">
+              <a class="link site-nav__link site-nav site-nav__portfolio--current" href="./portfolio.html"
                 >Портфолио</a
               >
             </li>
-            <li class="item"><a class="link contact" href="">Контакты</a></li>
+            <li class="site-nav__item">
+              <a class="link site-nav__link site-nav__contact" href="">Контакты</a>
+            </li>
           </ul>
         </nav>
 
         <!-- КОНТАКТНАЯ ИНФОРМАЦИЯ -->
         <ul class="list contact-us">
-          <li class="item">
-            <a class="email" href="mailto:info@devstudio.com">
-              <svg class="icon-mail">
+          <li class="contact-us__item">
+            <a class="contact-us__email" href="mailto:info@devstudio.com">
+              <svg class="contact-us__icon-mail">
                 <use href="./images/icons.svg#icon-mail"></use>
               </svg>
               info@devstudio.com
             </a>
           </li>
 
-          <li class="item">
-            <a class="number" href="tel:+380991111111">
-              <svg class="icon-phone">
+          <li class="contact-us__item">
+            <a class="contact-us__number" href="tel:+380991111111">
+              <svg class="contact-us__icon-phone">
                 <use href="./images/icons.svg#icon-phone"></use>
               </svg>
               +38 096 111 11 11
             </a>
           </li>
+
         </ul>
       </div>
     </header>
