@@ -377,7 +377,7 @@
 
       <section class="clients">
         <div class="container section-pos">
-          <h2 class="title-settings">Постоянные клиенты</h2>
+          <h2 class="clients__title-settings">Постоянные клиенты</h2>
           <ul class="clients-list list">
 
             <li class="clients-list__item">
@@ -434,26 +434,26 @@
 
     <!-- ПОДВАЛ САЙТА -->
     <footer class="down-part section-pos">
-      <div class="container">
+      <div class="container down-part__container">
         <div class="down-part-left-block">
 
           <div class="footer__left-content">
-            <a class="logo" href="/index.html"
-              ><span class="logo__part-logo">Web</span>Studio
+            <a class="footer-logo" href="/index.html"
+              ><span class="footer-logo__part-logo">Web</span>Studio
             </a>
             <address class="our-address pos-table-footer">
-              <ul class="list our-address__list">
+              <ul class="list our-address-list">
                 <li>
-                  <p>г. Киев, пр-т Леси Украинки, 26</p>
+                  <p class="our-address-list__adress">г. Киев, пр-т Леси Украинки, 26</p>
                 </li>
-                <li class="our-address__pos-table-footer">
-                  <a class="our-address__email-footer" href="mailto:info@example.com">
+                <li class="our-address-list__pos-table-footer">
+                  <a class="our-address-list__email-footer" href="mailto:info@example.com">
                     info@example.com
                   </a>
                 </li>
 
-                <li class="our-address__pos-table-footer">
-                  <a class="our-address__number-footer" href="tel:+380991111111">
+                <li class="our-address-list__pos-table-footer">
+                  <a class="our-address-list__number-footer" href="tel:+380991111111">
                     +38 099 111 11 11
                   </a>
                 </li>
@@ -506,14 +506,14 @@
             <p class="footer-subscribe-text">Подпишитесь на рассылку</p>
             <form class="footer-subscribe-form">
               <input
-                class="subscribe-input"
+                class="footer-subscribe-form__subscribe-input"
                 type="email"
                 name="subscribe-user-email"
                 placeholder="E-mail"
               />
               <button class="button-all button-subscribe" type="submit">
                 Подписаться
-                <svg class="icon-telegram">
+                <svg class="button-subscribe__icon-telegram">
                   <use href="./images/icons.svg#icon-telegram"></use>
                 </svg>
               </button>
@@ -524,60 +524,60 @@
 
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <p class="modal-text-title">Оставьте свои данные, мы вам перезвоним</p>
+        <p class="modal__text-title">Оставьте свои данные, мы вам перезвоним</p>
         <form>
-          <label class="modal-label">Имя</label>
-          <span class="user-name-thumb">
-            <input class="modal-input" type="text" name="user-name" />
-            <svg class="icon-modal icon-person-modal">
+          <label class="modal__label">Имя</label>
+          <span class="modal__user-name-thumb">
+            <input class="modal__input" type="text" name="user-name" />
+            <svg class="modal__icon-modal modal__icon-person-modal">
               <use href="./images/icons.svg#icon-person-modal"></use>
             </svg>
           </span>
 
-          <label class="modal-label">Телефон</label>
-          <span class="user-phone-thumb">
-            <input class="modal-input" type="tel" name="user-phone" />
-            <svg class="icon-modal icon-phone-modal">
+          <label class="modal__label">Телефон</label>
+          <span class="modal__user-phone-thumb">
+            <input class="modal__input" type="tel" name="user-phone" />
+            <svg class="modal__icon-modal modal__icon-phone-modal">
               <use href="./images/icons.svg#icon-phone-modal"></use>
             </svg>
           </span>
 
-          <label class="modal-label">Почта</label>
-          <span class="user-email-thumb">
-            <input class="modal-input" type="email" name="user-email" />
-            <svg class="icon-modal icon-email-modal">
+          <label class="modal__label">Почта</label>
+          <span class="modal__user-email-thumb">
+            <input class="modal__input" type="email" name="user-email" />
+            <svg class="modal__icon-modal modal__icon-email-modal">
               <use href="./images/icons.svg#icon-email-modal"></use>
             </svg>
           </span>
 
-          <label class="modal-label">Комментарий</label>
+          <label class="modal__label">Комментарий</label>
           <textarea
             placeholder="Введите текст"
-            class="modal-user-comments"
+            class="modal__user-comments"
             name="user-comments"
           ></textarea>
 
           <input
-            class="modal-form-checkbox visually-hidden"
+            class="modal__form-checkbox visually-hidden"
             type="checkbox"
             name="user-policy"
             id="user-policy"
           />
 
           <label class="user-agree-policy" for="user-policy">
-            <span class="check-wrap">
-              <svg class="icon-agree">
+            <span class="user-agree-policy__check-wrap">
+              <svg class="user-agree-policy__icon-agree">
                 <use href="./images/icons.svg#icon-agree-bg"></use>
               </svg>
             </span>
             Соглашаюсь с рассылкой и принимаю
             <a href="">Условия договора</a></label
           >
-          <button class="modal-form-button" type="submit">Отправить</button>
+          <button class="modal__form-button" type="submit">Отправить</button>
         </form>
 
-        <button class="modal-close" type="button" data-modal-close>
-          <svg class="icon-close">
+        <button class="modal__close" type="button" data-modal-close>
+          <svg class="modal__icon-close">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
