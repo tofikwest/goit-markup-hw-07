@@ -19,66 +19,68 @@
   line-height: 1.19;
 
   color: var(--footer-logo-color);
-}
-.footer-logo__part-logo {
-  color: var(--accent-color);
+
+  &__part-logo {
+    color: var(--accent-color);
+  }
 }
 
 .our-address {
+  margin-top: 20px;
+
   color: var(--footer-our-address-color);
 
   font-style: normal;
   font-size: 14px;
 
   line-height: 1.71em;
-  /* margin-left: 215px; */
 }
-.our-address-list__adress {
-  margin-top: 20px;
-  margin-bottom: 9px;
+.our-address-list {
+  &__adress {
+    margin-top: 20px;
+    margin-bottom: 9px;
+  }
+  &__pos-table-footer {
+    margin-bottom: 9px;
+  }
+  &__email-footer {
+    color: var(--contact-us-font);
+
+    text-decoration: none;
+
+    font-weight: 500;
+    font-size: 14px;
+
+    letter-spacing: 0.02em;
+    line-height: 1.71em;
+  }
+
+  &-footer {
+    color: var(--contact-us-font);
+
+    text-decoration: none;
+
+    font-weight: 500;
+    font-size: 14px;
+
+    line-height: 1.71em;
+    letter-spacing: 0.02em;
+  }
+  &__number-footer {
+    color: var(--contact-us-font);
+
+    text-decoration: none;
+
+    font-weight: 500;
+    font-size: 14px;
+
+    line-height: 1.71em;
+    letter-spacing: 0.02em;
+  }
 }
-.our-address-list__pos-table-footer {
-  margin-bottom: 9px;
-}
-.our-address-list__email-footer {
-  color: var(--contact-us-font);
 
-  text-decoration: none;
-
-  font-weight: 500;
-  font-size: 14px;
-
-  letter-spacing: 0.02em;
-  line-height: 1.71em;
-}
-
-.our-address-list__number-footer {
-  color: var(--contact-us-font);
-
-  text-decoration: none;
-
-  font-weight: 500;
-  font-size: 14px;
-
-  line-height: 1.71em;
-  letter-spacing: 0.02em;
-}
-
-.our-address {
-  margin-top: 20px;
-}
 .pos-table-footer {
   margin-top: 9px;
-}
-.join-list__join-icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 44px;
-  height: 44px;
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 50%;
-  margin-right: 10px;
 }
 
 .down-part__container {
@@ -123,20 +125,33 @@
 
 .join-list {
   display: flex;
+
+  &__join-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    margin-right: 10px;
+
+    &:hover,
+    &:focus {
+      transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+      background: #2196f3;
+    }
+  }
+
+  &__join-icon-logo {
+    width: 20px;
+    height: 20px;
+
+    fill: var(--join-icon-logo-color);
+  }
 }
 
-.join-list__join-icon-logo {
-  width: 20px;
-  height: 20px;
-
-  fill: var(--join-icon-logo-color);
-}
-.join-list__join-icon:hover,
-.join-list__join-icon:focus {
-  transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-  background: #2196f3;
-}
 /* ---------FOOTER RIGHT SIDE____ */
 .down-part-right-block {
   display: flex;
@@ -149,25 +164,27 @@
   display: flex;
 
   align-items: center;
+
+  &__subscribe-input {
+    width: 358px;
+    height: 50px;
+
+    padding-left: 16px;
+    margin-right: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+
+    color: #ffffff;
+    background-color: inherit;
+
+    &::placeholder {
+      color: rgba(255, 255, 255, 0.6);
+    }
+  }
 }
 .footer-subscribe-text {
   margin-bottom: 20px;
-}
-.footer-subscribe-form__subscribe-input {
-  width: 358px;
-  height: 50px;
-
-  padding-left: 16px;
-  margin-right: 12px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-  border-radius: 4px;
-
-  color: #ffffff;
-  background-color: inherit;
-}
-.footer-subscribe-form__subscribe-input::placeholder {
-  color: rgba(255, 255, 255, 0.6);
 }
 
 .button-subscribe {
@@ -194,22 +211,21 @@
     background 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   cursor: pointer;
-}
-.button-subscribe:hover,
-.button-subscribe:focus {
-  /* border-color: #188ce8; */
-  outline-color: #188ce8;
-  background: #188ce8;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-}
 
-.button-subscribe__icon-telegram {
-  width: 24px;
-  height: 24px;
+  &:hover,
+  &:focus {
+    outline-color: #188ce8;
+    background: #188ce8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+  }
+  &__icon-telegram {
+    width: 24px;
+    height: 24px;
 
-  margin-left: 10px;
-  vertical-align: middle;
+    margin-left: 10px;
+    vertical-align: middle;
 
-  fill: #ffffff;
+    fill: #ffffff;
+  }
 }
