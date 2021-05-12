@@ -37,7 +37,25 @@
   font-weight: 500;
   font-size: 14px;
 
+  &__link {
+    display: block;
+
+    padding-top: 32px;
+    padding-bottom: 32px;
+    color: var(--navigation-text-color);
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      color: var(--accent-color);
+    }
+  }
+
   &__studio--current {
+    position: relative;
+    color: var(--accent-color);
+
     &::after {
       position: absolute;
       content: "";
@@ -50,9 +68,6 @@
 
       border-radius: 2px;
     }
-
-    position: relative;
-    color: var(--accent-color);
   }
   &__portfolio--current {
     position: relative;
@@ -71,22 +86,6 @@
     }
   }
 
-  &__link {
-    display: block;
-
-    padding-top: 32px;
-    padding-bottom: 32px;
-
-    color: var(--navigation-text-color);
-
-    text-decoration: none;
-
-    &:hover,
-    &:focus {
-      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-      color: var(--accent-color);
-    }
-  }
   &__item:not(:last-child) {
     margin-right: 50px;
   }
